@@ -61,24 +61,6 @@ perl psmc_plot_avg.pl -g 10 -u 1.0e-08 -M 'QH9,SC1,SC4' -w 1 -W 3 -n 0 \
 `psmc_plot_avg.pl` without arguments prints the full option list; `-n 0` keeps the
 best-RI iteration instead of a fixed EM round (default `-n 20`).
 
-## Notes and caveats
-
-- **Placeholder paths**: file paths such as `D:/...` and `/public/home/...` in the
-  walkthroughs refer to our working directories and must be edited before running.
-- **Gradient forest**: `maxLevel = 1` was used because the number of populations is small;
-  forward offset is computed over all grid cells, i.e. without restricting target cells to
-  the suitable niche.
-- **ResistanceGA**: `run_test = TRUE`, `run = 5`, `maxiter = 10` in the walkthrough are test
-  settings; for production runs use `run_test = FALSE` and increase `run` / `maxiter` until
-  the optimiser converges.
-- **PSMC averaging**: the mean curve is an equally weighted arithmetic mean of *N*e across
-  individuals, evaluated on the union of all breakpoints with a piecewise-constant (step)
-  rule — no interpolation, no smoothing, no confidence interval.
-- Genotypes are coded 0/1/2; the LFMM/RDA walkthroughs transpose the SNP × sample matrix to
-  the sample × SNP layout required by `lfmm2` and `rda`.
-
-
-
 ## Contact
 
 Questions and bug reports: please open an issue.
