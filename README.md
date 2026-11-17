@@ -77,12 +77,7 @@ best-RI iteration instead of a fixed EM round (default `-n 20`).
 - Genotypes are coded 0/1/2; the LFMM/RDA walkthroughs transpose the SNP × sample matrix to
   the sample × SNP layout required by `lfmm2` and `rda`.
 
-## Data availability
 
-Raw sequencing data and derived genotype matrices are not included in this repository.
-Climate layers were obtained from CHELSA (https://chelsa-climate.org/), land-use layers
-from LUH2, and the plateau boundary from the National Tibetan Plateau Data Center
-(http://data.tpdc.ac.cn).
 
 ## Contact
 
