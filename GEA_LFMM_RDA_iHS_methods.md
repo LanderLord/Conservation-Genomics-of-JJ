@@ -1,3 +1,4 @@
+```shell
 #Notes: as we analyzed several brown bear (Ursus arctos) populations across the Tibetan Plateau and the Himalayas, for simplicity, this script uses the Tibet–Himalaya populations as an example.
 #This script was used for genotype–climate association analyses (LFMM2 & RDA) and for iHS-based selection scans.
 
